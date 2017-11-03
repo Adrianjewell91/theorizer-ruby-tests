@@ -16,6 +16,10 @@ describe 'chord_samples_generator' do
     end
   end
 
-
-  
+  it 'creates trios whose largest difference is seven' do
+    @samples.each do |sample|
+      sorted = sample.sort
+      expect(sorted[2] - sorted[0]).to eq(7)
+    end
+  end
 end

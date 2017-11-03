@@ -20,5 +20,5 @@ end
 
 if $PROGRAM_NAME == __FILE__
   samples = generate_chord_samples
-  p samples
+  # p samples
 end
